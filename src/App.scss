@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+// Globals
+$background: #FBFBFB;
+$text: #344B60;
+$white: #FFFFFF;
+$red: #CE3923;
+$light: #CCCCCC;
+$muted: #9B9B9B;
+$hover: rgba(115, 180, 255, 0.09);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  line-height: 1;
+}
+
+html, body {
+  background-color: $background;
+  color: $text;
+}
+
+// Views
+@import 'styles/home';

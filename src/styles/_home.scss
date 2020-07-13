@@ -1,0 +1,145 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+
+  .container {
+    min-height: 400px;
+    width: 70%;
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      h1 {
+        font-size: 28px;
+        font-weight: 300;
+        margin-right: 11px;
+      }
+
+      .add-button {
+        height: 40px;
+        width: 40px;
+        background-color: $red;
+        color: $white;
+        font-size: 30px;
+        border-radius: 50%;
+        font-weight: 700;
+        text-align: center;
+        user-select: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .table-wrapper {
+      padding: 30px 20px;
+      background-color: $white;
+      box-shadow: 0 0 10px 0 rgba(52, 75, 96, 0.05);
+      border-radius: 12px;
+      margin-top: 20px;
+
+      table {
+        border-spacing: 0;
+
+        th {
+          text-align: start;
+          padding-bottom: 20px;
+        }
+
+        tbody {
+          tr {
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+              background-color: $hover;
+
+              .delete-button {
+                opacity: 1;
+                pointer-events: all;
+              }
+            }
+
+            td {
+              padding: 20px 0;
+              border-bottom: 2px solid $light;
+              font-size: 14px;
+
+              &:first-child {
+                padding: 20px 10px;
+              }
+
+              .member-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .avatar {
+                  margin-right: 15px;
+                  height: 32px;
+                  width: 32px;
+
+                  img {
+                    height: 100%;
+                    width: 100%;
+                  }
+                }
+              }
+
+              .delete-button {
+                opacity: 0;
+                pointer-events: none;
+                user-select: none;
+                transition: opacity .2s ease-in-out;
+                
+                &:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .info-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+
+        span {
+          font-size: 14px;
+          color: $muted;
+        }
+
+        .invite-button {
+          margin-left: 10px;
+          user-select: none;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          img {
+            margin-right: 5px;
+          }
+
+          span {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $text;
+          }
+        }
+      }
+    }
+  }
+}
