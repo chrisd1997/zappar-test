@@ -126,7 +126,7 @@ const Home = (props: any) => {
                                             className="delete-button"
                                             onClick={() => deleteMember(value.id)}
                                         >
-                                            <img src="icons/trash.png" alt="Trash" />
+                                            <img src="/images/trash.png" alt="Trash" />
                                         </div>
                                     </td>
                                 </tr>
@@ -139,7 +139,7 @@ const Home = (props: any) => {
                             className="invite-button"
                             onClick={() => inviteMember()}
                         >
-                            <img src="icons/add.png" alt="Add" />
+                            <img src="/images/add.png" alt="Add" />
                             <span>Invite</span>
                         </div>
                     </div>
